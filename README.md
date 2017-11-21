@@ -1,4 +1,5 @@
 # portfolio
 design portfolio
 
-Authors: Annie Xue
+Authors: Annie Xue 
+         Dilan Hira
