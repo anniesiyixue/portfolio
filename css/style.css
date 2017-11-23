@@ -32,12 +32,26 @@ line {
 }
 
 /* give the vectors a dashed stroke */
+/* give the vectors a dashed stroke */
+.stroke-I {
+  stroke-dasharray: 8;
+  animation: write1 2s linear;
+}
 
 .stroke-an {
   stroke-dasharray: 860;
-  animation: write2 10s linear;
+  animation: write2 5s linear;
+  animation-delay: 2s;
 }
 
+@keyframes write1 {
+    0% {
+        stroke-dashoffset: 8;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
 
 @keyframes write2 {
     0% {
