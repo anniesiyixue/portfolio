@@ -61,3 +61,11 @@ line {
         stroke-dashoffset: 0;
     }
 }
+
+.cls-1{
+    fill:none;
+    stroke:#000;
+    stroke-miterlimit:10;
+    stroke-dasharray: 860;
+    animation: write2 7s linear;
+}
