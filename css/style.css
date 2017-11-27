@@ -21,6 +21,11 @@ body{
     background-color: white;
 }
 
+svg{
+    position: fixed;
+
+}
+
 path,
 line {
   fill: none;
@@ -55,17 +60,108 @@ line {
 
 @keyframes write2 {
     0% {
-        stroke-dashoffset: 860;
+        stroke-dashoffset: 1500;
     }
     100% {
         stroke-dashoffset: 0;
     }
 }
 
-.cls-1{
+circle{
     fill:none;
     stroke:#000;
     stroke-miterlimit:10;
-    stroke-dasharray: 860;
-    animation: write2 7s linear;
+}
+.cls-1{
+    fill:none;
+    stroke:#65c8d0;
+    stroke-miterlimit:10;
+    stroke-width:2px
+    /* animation: lg-circles 5s linear; */
+}
+.an-1{
+    stroke-dasharray: 1500;
+}
+@keyframes circle-1 {
+    0% {
+        stroke-dashoffset: 1500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+.cls-2{
+    stroke-dasharray: 1500;
+    fill:#fff;
+    /*animation: lg-circles 5s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;*/
+
+}
+.an-2{
+    visibility: hidden;
+}
+.an-3{
+    visibility: hidden;
+    stroke-dasharray: 600;
+}
+.an-4{
+    visibility: hidden;
+    stroke-dasharray: 800;
+}
+.an-5{
+    visibility: hidden;
+    stroke-dasharray: 400;
+}
+.an-6{
+    visibility: hidden;
+    stroke-dasharray: 400;
+}
+@keyframes lg-circles {
+    from {
+        stroke-dashoffset: 1500;
+        visibility: visible;
+    }
+    to {
+        stroke-dashoffset: 0;
+        visibility: visible;
+    }
+}
+.cls-3{
+    fill:#4d4d4d;
+    /*visibility: hidden;
+    animation: lg-circles 5s linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;*/
+}
+.cls-4{
+    fill:#f0493e;
+    /*visibility: hidden;
+    animation: lg-circles 5s linear;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;*/
+}  /* 7sec delay */
+.cls-5{
+    fill:#e6e6e6;
+    /*visibility: hidden;
+    animation: sm-circle 5s linear;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;*/
+}
+@keyframes sm-circle {
+    from {
+        stroke-dashoffset: 400;
+        visibility: visible;
+    }
+    to {
+        stroke-dashoffset: 0;
+        visibility: visible;
+    }
+}
+.cls-6{
+    fill:#fdb740;
+    /*visibility: hidden;
+    animation: sm-circle 5s linear;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;*/
 }
